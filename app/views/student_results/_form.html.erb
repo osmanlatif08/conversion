@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-body">
+    <%= form_with(model: student_result) do |form| %>
+      <% if student_result.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(student_result.errors.count, "error") %> prohibited this student result from being saved:</h2>
+          <ul>
+            <% student_result.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <%= form.label :conversion_type %>
+            <%= form.select :conversion_type, options_for_select(StudentResult.conversion_types, form.object.conversion_type), {}, class: "form-control" %>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <%= form.submit 'Save', class:'btn btn-success', disable_with: "Submitting..." %>
+        <% if form.object.id %>
+          <%= link_to 'Show', @student_result, class:'btn btn-primary' %>
+        <% end %>
+        <%= link_to 'Back', student_results_path, class:'btn btn-danger' %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="row" style="margin-top: 20px">
+  <div class="col-8">
+    <div class="card">
+      <div class="card-body table-responsive">
+        <p id="notice"><%= notice %></p>
+        <table class="table-hover table-striped table">
+          <tr>
+            <td>Student</td>
+            <td><%= @student_result.student.email %></td>
+          </tr>
+          <tr>
+            <td>Teacher</td>
+            <td><%= @student_result.teacher.email %></td>
+          </tr>
+          <tr>
+            <td>Conversion type</td>
+            <td><%= @student_result.conversion_type %></td>
+          </tr>
+          <tr>
+            <td>Input measure unit</td>
+            <td><%= @student_result.input_measure_unit %></td>
+          </tr>
+          <tr>
+            <td>Target measure unit</td>
+            <td><%= @student_result.target_measure_unit %></td>
+          </tr>
+          <tr>
+            <td>Input value</td>
+            <td><%= @student_result.input_value %></td>
+          </tr>
+          <tr>
+            <td>Student response</td>
+            <td><%= @student_result.student_response %></td>
+          </tr>
+          <tr>
+            <td>Output value</td>
+            <td><%= @student_result.output_value %></td>
+          </tr>
+          <tr>
+            <td>Created at</td>
+            <td><%= @student_result.created_at.to_date %></td>
+          </tr>
+        </table>
+        <%= link_to 'Edit', edit_student_result_path(@student_result), class:'btn btn-sm btn-primary' %>
+        <%= link_to 'Back', student_results_path, class:'btn btn-sm btn-danger' %>
+      </div>
+    </div>
+  </div>
+</div>

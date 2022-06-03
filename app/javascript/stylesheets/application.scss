@@ -1,0 +1,91 @@
+@import "bootstrap";
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+th {
+  padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+td {
+  padding: 4px !important;
+  white-space: nowrap;
+}
+
+div.field,
+div.actions {
+  margin-bottom: 10px; }
+
+#notice {
+  color: green; }
+#alert{
+  color:red;
+}
+
+.field_with_errors {
+  width: 100%;
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 100%;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff; }
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square; }
+
+label {
+  display: block; }
+.gallery_image{
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+
+.badge-no, .badge-unpaid, .badge-cancel  {
+  color: #fff;
+  background-color: #c00;
+}
+
+.badge-yes, .badge-paid, .badge-active  {
+  color: #fff;
+  background-color: green;
+}
+.badge-pending  {
+  color: #fff;
+  background-color: orange;
+}
+.badge-closed  {
+  color: #fff;
+  background-color: maroon;
+}
+.dlt-btn-div{
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 5px;
+  a{
+    color: white;
+  }
+}
+.break_space{
+  white-space: break-spaces !important;
+}
